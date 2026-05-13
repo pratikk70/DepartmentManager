@@ -4,12 +4,15 @@
     "esModuleInterop": true,
     "target": "es6",
     "moduleResolution": "node",
-    "ignoreDeprecations": "6.0",
+    "ignoreDeprecations": "5.0",
     "sourceMap": true,
     "outDir": "dist",
     "rootDir": "./src",
     "typeRoots": ["./src/@types", "./node_modules/@types"],
-    "lib": ["es2015"]
+    "types": ["node"],
+    "lib": ["es2015", "dom"],
+    "strict": false,
+    "skipLibCheck": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
